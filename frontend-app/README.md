@@ -24,7 +24,7 @@ The Rule Engine Application is a Node.js-based backend service that allows users
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shaiksuhail01/rule-engine-app.git
+   git clone https://github.com/shaiksuhail01/rule-engine-ast-app.git
    cd rule-engine-app
 
 2. Install dependencies:

@@ -44,76 +44,24 @@ API Endpoints:
 1. Create a Rule
     ```bash
     POST /api/rules/create
-    Request Body:
-    {
-  "ruleString": "YOUR_RULE_STRING"
-    }
-
-    Response:
-    {
-  "rule": {
-    "rule": "YOUR_RULE_STRING",
-    "ast": {
-      "type": "operator",
-      "value": "AND",
-      "left": {...},
-      "right": {...}
-    }
-    }
-    }
-    }
+   
 2. Combine Rules:
     ```bash
     POST /api/rules/combine
-    Request Body:
-    ["RULE_STRING_1", "RULE_STRING_2", ...]
-
-    Response:
-    {
-  "rule": {
-    "rule": "combine",
-    "combinedAst": {...}
-    }
-    }
     
-
 3. Evaluate a Rule:
     ```bash
     POST /api/rules/evaluate
-    Request Body:
-    {
-  "astId": "RULE_ID",
-  "data": {
-    "key": "value"
-    }
-    }
-
-    Response:
-    {
-  "result": true
-    }
 
 
 4. Get All Rules:
     ```bash
     GET /api/rules/getAll
 
-    Response:
-    [
-  {
-    "rule": "YOUR_RULE_STRING",
-    "ast": {...}
-  },
-  ...
-    ]
 
 5. Delete a Rule:
     ```bash
     DELETE /api/rules/:id
-
-    Response:
-    "Rule has been deleted..."
-
 
 
 
